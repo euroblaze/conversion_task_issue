@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_project_issue_form">
+            <field name="name">project.task.form</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <field name="active" position="after">
+                    <div class="oe_button_box" name="button_box">
+                        <button name="get_data" type="object" string="Convert this Task to Issue" groups="base.group_user"
+                                class="oe_stat_button" icon="fa-exchange">
+                        </button>
+                    </div>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
